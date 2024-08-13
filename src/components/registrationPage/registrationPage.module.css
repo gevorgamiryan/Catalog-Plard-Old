@@ -1,0 +1,167 @@
+.registrationPage {
+    width: 100%;
+    height: 662px;
+    background-image: url(../../assets/productPaageBackground/Group\ 2442.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registrationBox {
+    width: 554px;
+    height: 392px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    transition: .5s;
+    border-radius: 5px;
+    position: relative;
+}
+
+.imgBox {
+    width: 275px;
+    height: 392px;
+    background-image: url(../../assets/headerFiles/9109dd77786df71185365f9e515b46d5.jpg);
+    background-position: left;
+    background-size: 155% 100%;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    transition: .2s;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-color: #00000088;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 100;
+    font-family: monsterrat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.fill span {
+    font-weight: 900;
+}
+
+.form {
+    width: calc(100% - 275px);
+    position: absolute;
+    left: 0;
+    transition: .2s;
+    height: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+}
+
+.form h1 {
+    font-family: monsterrat;
+    font-weight: 600;
+    font-size: 24px;
+    color: #4F4F4F;
+    text-align: start;
+    width: 100%;
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+}
+
+.form h1 svg {
+    transition: .3s;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 2px;
+
+    &&:hover {
+        background-color: #4f4f4f9b;
+    }
+
+    &&:hover path {
+        fill: #ffffff;
+    }
+}
+
+.form input {
+    width: 239px;
+    height: 32px;
+    background-color: #EBEBEB;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+}
+
+.children {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    font-family: monsterrat;
+    color: #4F4F4F;
+    position: relative;
+}
+.children i {
+    position: absolute;
+    right: 0;
+}
+
+.form button {
+    width: 239px;
+    height: 32px;
+    border: none;
+    background-color: #C10016;
+    color: #fff;
+    font-weight: 600;
+    font-family: monsterrat;
+    border-radius: 25px;
+}
+
+.cuestion {
+    color: #717171;
+    font-size: 14px;
+    font-family: monsterrat;
+    text-transform: capitalize;
+
+}
+
+
+.checkBoxDiv {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 10px;
+    font-family: monsterrat;
+    color: #1F1617;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+.checkBoxDiv input {
+    width: 15px;
+}
+
+.cuestionBox {
+    margin-top: 25px;
+    display: flex;
+    row-gap: 5px;
+    flex-direction: column;
+}
+
+.getPasw {
+    font-family: monsterrat;
+    color: #1F1617;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}

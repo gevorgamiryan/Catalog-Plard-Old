@@ -1,0 +1,494 @@
+.addProductPopUpBox {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(51 51 51 / 75%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.addProductPopUp {
+    width: 860px;
+    height: 615px;
+    background-color: #FFFFFF;
+    padding: 25px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transition: .8s;
+    transform: translate(-50%, -50%) perspective(1000px) rotateX(90deg);
+}
+
+.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.activeBox {
+    top: 50%;
+    transition: .7s;
+    transform: translate(-50%, -50%) perspective(1000px) rotateX(0deg);
+
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 20px;
+    font-family: monsterrat;
+    font-weight: 600;
+    color: #2E2E2E;
+    font-size: 16px;
+    width: 100%;
+    text-transform: capitalize;
+}
+
+.container {
+    width: 100%;
+    min-height: 460px;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding-top: 15px;
+}
+
+.selectCategory {
+    width: 686px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-left: 15px;
+}
+
+.categoriesBox {
+    width: 100%;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    column-gap: 15px;
+    position: relative;
+}
+
+.changeGender {
+    width: 60px;
+    height: 82px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset 0 0 5px 30px #E8E8E8;
+}
+
+.gender {
+    width: 50px;
+    height: 32px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    user-select: none;
+}
+
+.gender svg path {
+    fill: #939393;
+    transition: .3s;
+
+}
+
+.activeGender {
+
+    border: 2px solid #D9D9D9;
+}
+
+.activeGender svg path {
+    fill: #C10016;
+}
+
+.categories {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 100px;
+    padding: 0 5px;
+}
+
+.categories::-webkit-scrollbar {
+    background-color: #FFFFFF;
+    height: 6px;
+    box-shadow: 0px 0px 5px #00000040;
+    border-radius: 5px;
+}
+
+.categories::-webkit-scrollbar-thumb {
+    background-color: #C10016;
+    border-radius: 5px;
+
+
+}
+
+.category {
+    min-width: 110px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    font-family: monsterrat;
+    font-size: 14px;
+    text-transform: capitalize;
+    box-shadow: 0 0 12px 0px #0000005c;
+    padding-top: 2px;
+}
+
+.categoryImg {
+    max-width: 55px;
+    max-height: 50px;
+}
+
+.activeCategory {
+
+    border: 3px solid #939393;
+}
+
+.subCategoriesBox {
+    width: 686px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.scrollBar {
+    width: 100%;
+    height: 5px;
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+
+
+}
+
+.scrollThumb {
+    width: 5px;
+    height: 6px;
+    background-color: #C10016;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.subCategories {
+    font-size: 16px;
+    display: flex;
+    column-gap: 94px;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.subCat {
+    font-family: monsterrat;
+    font-size: 16px;
+    color: #4F4F4F;
+    user-select: none;
+    cursor: pointer;
+    font-weight: 400;
+    text-wrap: nowrap;
+}
+
+
+.imgBox {
+    width: 686px;
+    height: auto;
+    display: flex;
+    padding-left: 15px;
+    justify-content: space-between;
+}
+
+.imgGroup {
+    width: 194px;
+    height: 180px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 7px 0px rgb(116 116 116 / 46%);
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img input {
+    display: none;
+}
+
+.img img {
+    max-width: 100%;
+    max-height: 114px;
+}
+
+.imgsItem {
+    width: 34px;
+    height: 34px;
+    position: relative;
+    display: flex;
+}
+
+.imgsItem input {
+    display: none;
+}
+
+.imgsItem img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.imgs {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.tags {
+    width: auto;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.tags input {
+    padding: 3px 0 5px 5px;
+    width: 220px;
+    border: none;
+    border-bottom: 1px solid #ACACAC;
+    outline: none;
+    background-color: transparent;
+}
+
+.inputBox {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    align-items: end;
+}
+
+.inputBox span {
+    position: absolute;
+    text-transform: capitalize;
+    font-family: monsterrat;
+    font-size: 14px;
+    left: 4px;
+    top: 25px;
+    transition: .3s;
+}
+
+.activeInp {
+    top: 5px !important;
+}
+
+.changeGold {
+    width: 100%;
+    max-height: 130px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.changeGoldHead {
+    display: flex;
+    height: 64px;
+    margin-top: 5px;
+    background-color: #E8E8E8;
+    padding-left: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iconBox {
+    display: flex;
+    column-gap: 10px;
+    font-family: monsterrat;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 19px;
+    font-weight: 600;
+    color: #1f1617;
+}
+
+.goldsBox {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding-left: 25px;
+    justify-content: space-between;
+    transition: 1s;
+    visibility: hidden;
+    transform: translateY(-150px);
+    opacity: 0;
+
+}
+
+.openAndCloseHiddenBox {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.openAndCloseHiddenBox span {
+    width: 85px;
+    height: 24px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    font-family: monsterrat;
+    font-size: 14px;
+
+}
+
+.openAndCloseHiddenBox svg {
+    transition: .5s;
+}
+
+.transform {
+    transform: rotateZ(-180deg);
+}
+
+.goldBox {
+    display: flex;
+    column-gap: 15px;
+
+}
+
+.goldsContainer {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 15px;
+}
+
+.probs {
+    width: 50px;
+    height: 24px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monsterrat;
+    cursor: pointer;
+    opacity: .7;
+}
+
+.goldBox:nth-of-type(2) {
+    border-left: 1px solid #BEBEBE;
+    padding-left: 15px;
+}
+
+.hiddenBox {
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.golds {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.setWeight {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monsterrat;
+    text-transform: capitalize;
+
+}
+
+.weightInp {
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    padding: 2px 0;
+    position: relative;
+    align-items: center;
+}
+
+.weightInp span {
+    position: absolute;
+    top: -15px;
+    text-transform: capitalize;
+    font-family: monsterrat;
+}
+
+.weightInp input {
+    height: 25px;
+    border: none;
+    outline: none;
+    width: 70px;
+    background-color: transparent;
+    font-size: 16px;
+    font-family: monsterrat;
+}
+
+.weights {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.acceptProductBtn {
+    width: 160px;
+    height: 32px;
+    border-radius: 25px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-family: monsterrat;
+    border: none;
+    background-color: #C10016;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.acceptProductBtnBox {
+    display: flex;
+    justify-content: end;
+}

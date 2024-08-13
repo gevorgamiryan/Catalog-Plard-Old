@@ -1,0 +1,384 @@
+.currentProductAboutBox {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color:rgb(51 51 51 / 75%);
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    z-index: 1;
+
+}
+
+.currentProductAbout {
+    width: 856px;
+    height: 651px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transition: .5s;
+    transform: translate(-50%, -50%) perspective(1000px) rotateX(90deg);
+    row-gap: 15px;
+}
+
+.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.activeBox {
+    top: 50%;
+    transition: .5s;
+    transform: translate(-50%, -50%) perspective(1000px) rotateX(0deg);
+
+}
+
+.h1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: monsterrat;
+    font-size: 14px;
+    font-weight: 500;
+    color: #777777;
+}
+
+.dataBox {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #B3B3B4;
+    padding: 0 5px;
+    color: black;
+}
+
+.icons {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+
+.productAbout {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+.imagesCarusellBox {
+    display: flex;
+    flex-direction: column;
+    width: 388px;
+    height: auto;
+}
+
+.imgBox {
+    width: 388px;
+    height: 255px;
+    position: relative;
+    overflow: hidden;
+}
+
+.imgBox img {
+    /* position: absolute;
+    left: 0;
+    top: 0; */
+    width: 100%;
+    height: 100%;
+    transition: .6s;
+}
+
+.leftArrow {
+    width: 32px;
+    height: 32px;
+    border-radius: 3px;
+    background-color: #fff;
+    z-index: 3;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.196);
+    user-select:none;
+}
+
+.imagesCarusellBox {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.rightArrow {
+    width: 32px;
+    height: 32px;
+    border-radius: 3px;
+    background-color: #fff;
+    right: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.196);
+    user-select:none;
+
+}
+
+.imgChildrens {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.miniImg {
+    width: 84px;
+    height: 58px;
+}
+
+.productitems {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.productCategory {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productCategoryParams {
+    display: flex;
+    flex-direction: column;
+    font-family: monsterrat;
+}
+
+.categoryImgBox {
+    display: flex;
+    height: 100%;
+    column-gap: 20px;
+}
+
+.categoryImgBox h1 {
+    font-size: 16px;
+    color: #1F1617;
+    font-weight: 900;
+}
+
+.categoryImgBox span {
+    color: #7A7A7A;
+    font-size: 14px;
+}
+
+.switchBox {
+    width: 49px;
+    height: 18px;
+    border-radius: 25px;
+    background-color: #B3B3B4;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.switchBox svg {
+    left: 2px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .3s;
+}
+
+.switchBox .activeSwitch {
+    left: calc(100% - 2px);
+    transform: translate(-100%, -50%);
+}
+
+.priceBox {
+    width: 400px;
+    height: 124px;
+    background-color: #F0F0F0;
+    padding: 6px 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.item {
+    line-height: 30px;
+    display: flex;
+    color: #4F4F4F;
+    text-transform: capitalize;
+    justify-content: space-between;
+    border-bottom: 1px solid #4F4F4F;
+}
+
+.item:nth-of-type(2) span {
+    font-weight: 900;
+    color: #C10016;
+    font-family: monsterrat;
+}
+
+.item span {
+    font-weight: 900;
+}
+
+.tableItems {
+    font-family: monsterrat;
+    border: 1px solid #C1C1C1;
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    justify-content: center;
+    border-right: none;
+}
+
+.tableHead {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    
+}
+
+.tableHead div:nth-of-type(1) {
+    width: 150px;
+    border-right: 1px solid #C1C1C1;
+    height: 100%;
+}
+.tableHead:nth-of-type(1) {
+    border-bottom: 1px solid #C1C1C1;
+}
+
+.tableHead div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 76px;
+    height: 100%;
+    border-right: 1px solid #C1C1C1;
+}
+
+.tabelImgs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: monsterrat;
+    text-transform: capitalize;
+    align-items: center;
+}
+
+.tabelImgs span {
+    display: flex;
+    column-gap: 10px;
+}
+
+.goldColor {
+    width: 50px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+
+}
+.secondTable {
+    display: grid;
+}
+
+.secondTableItems {
+    font-family: monsterrat;
+    display: grid;
+    height: 90px;
+    justify-content: center;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+.secondTableHead  {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-content: center;
+    text-transform: capitalize;
+    font-size: 13px;
+    font-family: monsterrat;
+    border-bottom: 1px solid #C1C1C1;
+
+}
+.secondTableHead div {
+    border-right: 1px solid #C1C1C1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.secondTableHead:nth-of-type(1) { 
+    border-top: 1px solid #C1C1C1;
+}
+
+.secondTableHead div:nth-of-type(1) { 
+    border-left: 1px solid #C1C1C1;
+}
+.totalBox {
+    display: flex;
+    justify-content: end;
+}
+.total  {
+    width: 101px;
+    border: 1px solid #C1C1C1;
+    height: 100%;
+    border-top: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+font-size: 14px;
+}
+
+.total span {
+    font-weight: 900;
+}
+.diameter {
+    font-size: 12px;
+}
+.tableHead .off {
+    max-width:80px ;
+}
+.tableHead div:nth-of-type(5) {
+    width: 96px;
+    color: #006794;
+}

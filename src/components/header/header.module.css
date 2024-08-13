@@ -1,0 +1,173 @@
+@font-face {
+    font-family: monsterrat;
+    src: url(../../fonts/monsterrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: monsterrat bold;
+    src: url(../../fonts/monsterrat/Montserrat-Bold.ttf);
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.logoImg {
+    min-width: 110px;
+    min-height: 60px;
+}
+
+.searchBox {
+    width: 378px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: #d7d7d7c7;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 6px;
+    column-gap: 15px;
+}
+
+.searchButton {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #C10016;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+}
+
+.input {
+    font-family: monsterrat;
+    font-weight: 900;
+    font-size: 16px;
+    border: none;
+    width: 80%;
+    color: #9e9e9e;
+    background-color: unset;
+    outline: none;
+    letter-spacing: 1.4px;
+
+    &&::placeholder {
+        color: #999999;
+    }
+}
+
+.signInBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.signInBox div:nth-of-type(2){
+    z-index: 1;
+}
+.localUserBox {
+    width: auto;
+    height: auto;
+    display: grid;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+.userImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.userName {
+    color: #4F4F4F;
+    font-weight: 900;
+    font-family: monsterrat;
+    font-size: 16px;
+}
+
+.logOutBox {
+    position: absolute;
+    top: 45px;
+    width: 206px;
+    height: 125px;
+    box-shadow: 0px 0px 12px #00000052;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+    align-items: center;
+    justify-content: center;
+    row-gap: 15px;
+    opacity: 0;
+    transform: translateY(-20px) ;
+    visibility: hidden;
+    transition: .4s;
+    right: 0;
+    cursor: default;
+    border-radius: 5px;
+}
+
+.active {
+    opacity: 1;
+    transform: translateY(4px);
+    visibility: visible;
+    background-color: #FFFFFF;
+}
+
+.LinkToUserData {
+    font-family: monsterrat bold;
+    font-weight: 900;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #1F1617;
+}
+
+.LinkToCreateUser {
+    font-family: monsterrat;
+    font-weight: 900;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #000;
+}
+
+.logOut {
+    font-family: monsterrat bold;
+    font-weight: 900;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #4F4F4F;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    column-gap: 10px;
+    height: 35px;
+    border-top: 1px solid #B3B3B4;
+    width: 100%;
+}
+.linkToLogIn {
+    font-family: monsterrat ;
+    font-weight:900;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #4F4F4F;
+    text-shadow: 0 0 1px;
+}

@@ -1,0 +1,238 @@
+.categories {
+    display: flex;
+    user-select: none;
+    column-gap: 25px;
+    position: relative;
+    min-width: 300px;
+    align-items: center;
+    height: 130px;
+    justify-content: space-between;
+}
+
+.changeGender {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+
+}
+
+
+.changeGender div {
+    width: 50px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    user-select: none;
+}
+
+.active {
+    box-shadow: 0 0 10px 2px #a4a4a4;
+}
+
+.changeGender .active svg path {
+    transition: .6s;
+    fill: #C10016;
+}
+
+
+
+.categoriesCarusellBoxes {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+    overflow-x: auto;
+    max-width: 1160px;
+    position: relative;
+    padding: 10px;
+}
+
+.categoriesCarusellBoxes::-webkit-scrollbar {
+    height: 8px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+
+}
+
+.categoriesCarusellBoxes::-webkit-scrollbar-thumb {
+    height: 8px;
+    background-color: #C10016;
+    border-radius: 5px;
+}
+
+.categoriesCarusellBoxes::-webkit-scrollbar-thumb:hover {
+    background-color: #810c0c;
+
+}
+
+
+
+.categoryBox {
+    min-width: 140px;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: monsterrat;
+    font-size: 12px;
+    font-weight: 900;
+    row-gap: 7px;
+    box-shadow: 0 0 12px 0px #0000005c;
+    border-radius: 5px;
+
+}
+
+.categoryBox img {
+    max-width: 55px;
+    max-height: 55px;
+}
+
+.changedCategory {
+    box-shadow: none;
+    border: 3px solid #0000005e;
+}
+
+.addCategory {
+    width: 50px;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0 0 12px 0px #0000005c;
+    font-size: 35px;
+    font-weight: 100;
+    font-family: monsterrat;
+    border-radius: 5px;
+    color: #00000040;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.categoriesAddBox {
+    display: flex;
+    column-gap: 25px;
+    position: relative;
+
+}
+
+.addCategoryMenu {
+    width: 301px;
+    height: 360px;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    top: 60%;
+    background-color: #FFFFFF;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    visibility: hidden;
+    opacity: 0;
+
+
+}
+
+.addCategoryMenuActive {
+    visibility: visible;
+    opacity: 1;
+    top: 110%;
+    z-index: 1;
+        transition: .5s;
+}
+
+.firstChildren {
+    font-size: 16px;
+    font-weight: 800;
+    color: #2E2E2E;
+    font-family: monsterrat bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.changeGenderBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.changeGenderCategory {
+    width: 125px;
+    height: 32px;
+    border-radius: 5px;
+    border: 1px solid #A4A4A4;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 5px;
+    column-gap: 10px;
+    font-family: monsterrat;
+    font-weight: 900;
+    color: #4F4F4F;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.changed {
+    border: 1px solid #ffffff00;
+    box-shadow: 0 0 7px 2px #00000040;
+}
+
+.changed svg path {
+    transition: .3s;
+    fill: #C10016;
+}
+
+.categoryName {
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #C1C1C1;
+    outline: none;
+    font-family: monsterrat;
+    font-weight: 900;
+    font-size: 16px;
+
+    &&::placeholder {
+        text-transform: capitalize
+    }
+}
+
+.imgBox {
+    width: 261px;
+    height: 145px;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.imgBox input {
+    display: none;
+}
+
+.imgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.acceptCategory {
+    width: 259px;
+    height: 32px;
+    border-radius: 25px;
+    background-color: #C10016;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    font-family: monsterrat;
+    font-weight: 800;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}

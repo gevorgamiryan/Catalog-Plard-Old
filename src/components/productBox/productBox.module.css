@@ -1,0 +1,158 @@
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.productBox {
+    width: 195px;
+    height: 170px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 5px;
+    row-gap: 20px;
+    font-family: monsterrat;
+    font-size: 14px;
+    color: #2E2E2E;
+    font-weight: 900;
+    user-select: none;
+}
+
+.productBox img {
+    width: 100%;
+    height: 114px;
+}
+
+.articleBox {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.priceBox {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 15px;
+    font-weight: 100;
+    color: #1F1617;
+    font-family: monsterrat bold;
+    position: relative;
+}
+
+.priceBox svg {
+    cursor: pointer;
+}
+
+.hiddenBox {
+    width: 60px;
+    height: 28px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    right: 10px;
+    bottom: -8px;
+    transform: translateX(15px);
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 3px 1px #D6D6D6;
+    border-radius: 2px;
+    align-items: center;
+}
+
+.visibleBox {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+}
+
+.deleteProduct {
+    width: 417px;
+    height: 149px;
+    display: flex;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-49.3%, -50%);
+    transition: .1s;
+    opacity: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+    flex-direction: column;
+    visibility: hidden;
+}
+
+.showedDelete {
+    opacity: 1;
+    visibility: visible;
+}
+
+.deleteBoxHead {
+    width: 100%;
+    height: 30px;
+    background-color: #E8E8E8;
+    border-radius: 5px 0 0 0;
+    display: flex;
+    align-items: center;
+    color: #2E2E2E;
+    font-weight: 900;
+    font-family: monsterrat bold;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.deleteBoxHead span {
+    cursor: pointer;
+    fill: red;
+    margin: 0;
+    display: flex;
+    width: max-content;
+}
+
+.dleteQuestion {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.dleteQuestion span {
+    font-family: monsterrat bold;
+    font-weight: 800;
+    font-size: 18px;
+    color: #2E2E2E;
+}
+.buttonsBox {
+    display: flex;
+    column-gap: 25px;
+}
+.buttonsBox button {
+    width: 140px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monsterrat;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 16px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+.yes {
+    background-color:#C10016 ;
+}
+.no {
+    background-color: #8A8A8AB5;
+}
